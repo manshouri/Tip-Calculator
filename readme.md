@@ -1,0 +1,2 @@
+-This project is Tip calculator showing how much tip, a worker earns depending on the number of guests and their experience at the hotel
+-it is developed using html, css and javascript
