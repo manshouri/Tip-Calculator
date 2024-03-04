@@ -4,7 +4,7 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -52,7 +52,7 @@ body{
     border-radius: 5px;
 }
 #tip-amount{
-    /* visibility: hidden; */
+     visibility: hidden; 
     min-width: 250px;
     border-radius: 2px;
     background-color: green;
@@ -67,4 +67,31 @@ body{
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 0.25s;
     animation: fadein 0.5s, fadeout 0.5s 0.25s;
+}
+@-webkit-keyframes fadein{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
+@keyframes fadein{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout{
+    
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
+@keyframes fadeout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
+@media(max-width:480px){
+    .calculator input{
+        width: 85%;
+    }
+}
+@media(max-width:480px){
+    .calculator input{
+        width: 80%;
+    }
 }
