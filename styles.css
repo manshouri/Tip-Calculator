@@ -1,0 +1,70 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(90deg, #A100FFFF 0%, #A100FFFF 5%, #A100FFFF 18%, #A100FFFF 21%, #A100FFFF 31%, #71C4FFFF 100%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    border: 1px solid black;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    border: 1px solid blue;
+    background: whitesmoke;
+    width: 400px;
+    margin: auto;
+    font-weight: 100;
+    padding: 0px 25px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.calculator input{
+    box-sizing: border-box;
+    padding: 8px;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.calculator button{
+    /* width: 5%; */
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: whitesmoke;
+    
+}
+.calculator button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+#quality{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#tip-amount{
+    /* visibility: hidden; */
+    min-width: 250px;
+    border-radius: 2px;
+    background-color: green;
+    position: fixed;
+    bottom: 30px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 16px;
+}
+#tip-amount.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 0.25s;
+    animation: fadein 0.5s, fadeout 0.5s 0.25s;
+}
